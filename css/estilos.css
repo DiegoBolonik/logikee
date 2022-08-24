@@ -1,0 +1,10 @@
+*{text-align:center; 
+  background-color: #6495ED;}
+
+input[name="rua"]{width: 200px; background-color: #ccc;}
+input[name="bairro"]{width: 200px; background-color: #ccc;}
+input[name="cidade"]{width: 200px; background-color: #ccc;}
+input[name="uf"]{width: 200px; background-color: #ccc;}
+input[name="ibge"]{width: 200px; background-color: #ccc;}
+
+h1 {color:blue; font-size:40px; font-family: tahoma;}
