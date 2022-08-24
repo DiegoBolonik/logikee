@@ -1,5 +1,4 @@
-*{text-align:center; 
-  background-color: #6495ED;}
+*{background-color: #6495ED;}
 
 input[name="rua"]{width: 200px; background-color: #ccc;}
 input[name="bairro"]{width: 200px; background-color: #ccc;}
