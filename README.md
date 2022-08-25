@@ -1,6 +1,6 @@
 # Consulte CEPs de todo o Brasil via API do Via cep
 <p align="center">
-  ![image](https://user-images.githubusercontent.com/79227339/186783570-b6910dcd-bb29-4d2a-a3aa-1b8697bbdb34.png)
+  <img alt="img" src="img/print1.png">
 </p>
 
 ## 🎯 Sobre
