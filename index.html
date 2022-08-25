@@ -14,7 +14,7 @@
             document.getElementById('ibge').value=("");
     }
 
-    function meu_callback(conteudo) {
+    function buscaCep(conteudo) {
         if (!("erro" in conteudo)) {
             document.getElementById('rua').value=(conteudo.logradouro);
             document.getElementById('bairro').value=(conteudo.bairro);
@@ -46,7 +46,7 @@
 
                 var script = document.createElement('script');
 
-                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=buscaCep';
 
                 document.body.appendChild(script);
 
@@ -64,21 +64,37 @@
     </head>
 
     <body>
-      <form method="get" action=".">
-        <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" /></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="30" readonly /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" readonly/></label><br />
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" readonly/></label><br />
-      </form>
+        <main class="container">
+            <section>
+                <form method="get" action=".">
+                    <div>
+                        <label>Cep:
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" /></label><br />
+                    </div>
+                    <div>    
+                        <label>Rua:
+                        <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
+                    </div>
+                    <div>
+                        <label>Bairro:
+                        <input name="bairro" type="text" id="bairro" size="30" readonly /></label><br />
+                    </div>
+                    <div>
+                        <label>Cidade:
+                        <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
+                    </div>
+                    <div>
+                        <label>Estado:
+                        <input name="uf" type="text" id="uf" size="2" readonly/></label><br />
+                    </div>
+                    <div>
+                        <label>IBGE:
+                        <input name="ibge" type="text" id="ibge" size="8" readonly/></label><br />
+                    </div>
+                </form>
+            </section>
+        </main>
     </body>
 
     </html>

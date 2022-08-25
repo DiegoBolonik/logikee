@@ -1,9 +1,53 @@
-*{background-color: #6495ED;}
 
-input[name="rua"]{width: 200px; background-color: #ccc;}
-input[name="bairro"]{width: 200px; background-color: #ccc;}
-input[name="cidade"]{width: 200px; background-color: #ccc;}
-input[name="uf"]{width: 200px; background-color: #ccc;}
-input[name="ibge"]{width: 200px; background-color: #ccc;}
+body {
+  background-color: #8e2de2;
+  background-repeat: no-repeat;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
 
-h1 {color:blue; font-size:40px; font-family: tahoma;}
+h1 {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 28px;
+  background-color:#ccc;
+  border-radius: 10px;  
+  color:blue; font-size:40px; font-family: tahoma;
+}
+
+section {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height: 50vh;
+}
+
+form div {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+form input, form textarea {
+  border-radius: 10px;  
+}
+
+form input:focus, form textarea:focus {
+  background-color: #8e2de2;
+}
+
+input[name="rua"]{width: 200px; background-color:white;}
+input[name="bairro"]{width: 200px; background-color:white;}
+input[name="cidade"]{width: 200px; background-color:white;}
+input[name="uf"]{width: 200px; background-color:white;}
+input[name="ibge"]{width: 200px; background-color:white;}
+
+main.container {
+  justify-content: center;
+  background:#ccc;
+  padding: 2rem;
+
+  border-radius: 10px;
+}
