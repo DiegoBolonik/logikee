@@ -1,3 +1,12 @@
+h1 {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 28px;
+  background-color:#ccc;
+  border-radius: 10px;  
+  color:blue; font-size:40px; font-family: tahoma;
+}
 
 body {
   background-color: #8e2de2;
@@ -7,14 +16,11 @@ body {
   align-items: center;
 }
 
-h1 {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 28px;
-  background-color:#ccc;
-  border-radius: 10px;  
-  color:blue; font-size:40px; font-family: tahoma;
+main.container {
+  justify-content: center;
+  background:#ccc;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 section {
@@ -35,7 +41,7 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-  background-color: #8e2de2;
+  background-color: #CCCCCC;
 }
 
 input[name="rua"]{width: 200px; background-color:white;}
@@ -44,10 +50,3 @@ input[name="cidade"]{width: 200px; background-color:white;}
 input[name="uf"]{width: 200px; background-color:white;}
 input[name="ibge"]{width: 200px; background-color:white;}
 
-main.container {
-  justify-content: center;
-  background:#ccc;
-  padding: 2rem;
-
-  border-radius: 10px;
-}
